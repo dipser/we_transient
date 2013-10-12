@@ -37,7 +37,7 @@ class Transients {
 
 	public function __construct( /*...*/ ) {
 		$args = func_get_args();
-		$this->db = $GLOBALS['DB_WE']; //$db = new DB_WE(); | $db = $GLOBALS['DB_WE']; $db->query();
+		$this->db = $GLOBALS['DB_WE'];
 		$this->table = 'tblTransients';
 		if ( $args[0]==true ) {
 			$sql = "DROP TABLE `".$this->table."`";
