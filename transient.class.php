@@ -45,7 +45,8 @@ class Transients {
 		}
 		$sql  = "CREATE TABLE IF NOT EXISTS `".$this->table."` ( ";
 		$sql .= "`key` varchar(255) NOT NULL default '', ";
-		$sql .= "`val` varchar(2000) NOT NULL default '', ";
+		//$sql .= "`scope` varchar(255) NOT NULL default '', "
+		$sql .= "`val` varchar(2000) NOT NULL default '', "; // text NOT NULL
 		$sql .= "`expire` int(20) unsigned NOT NULL default '0', ";
 		$sql .= "PRIMARY KEY  (`key`) ";
 		$sql .= ") ENGINE=MyISAM  DEFAULT CHARSET=utf8";
